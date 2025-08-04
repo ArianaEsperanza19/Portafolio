@@ -11,6 +11,10 @@
 
         <div class="cuadricula">
                 <Proyectos v-if="contenidoActual === 'proyectos'" />
+                <Educacion v-if="contenidoActual === 'educacion'" />
+                <Herramientas v-if="contenidoActual === 'herramientas'" />
+                <Experiencia v-if="contenidoActual === 'experiencia'" />
+                <Intereses v-if="contenidoActual === 'intereses'" />
 
             <div class="otros">
                 <div class="boton" @click="mostrarContenido('proyectos')"><span>Proyectos</span></div>
@@ -26,12 +30,20 @@
 <script>
 // Asegúrate de que los archivos de estos componentes existan en la misma carpeta
 import Proyectos from './components/Proyectos.vue';
+import Educacion from './components/Educacion.vue';
+import Herramientas from './components/Herramientas.vue';
+import Experiencia from './components/Experiencia.vue';
+import Intereses from './components/Intereses.vue';
 import Info from './components/Info.vue';
 
 export default {
     name: 'App',
     components: {
         Proyectos,
+        Educacion,
+        Herramientas,
+        Experiencia,
+        Intereses,
         Info
     },
     data() {
