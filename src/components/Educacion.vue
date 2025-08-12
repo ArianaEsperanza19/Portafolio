@@ -4,17 +4,17 @@
 
     <div class="curso">
       <h3>Ingeniería en informática</h3>
-      <p>Universidad Rafael Belloso Chacín, 2020</p>
+      <p>Universidad Rafael Belloso Chacín, 2020.</p>
     </div>
 
     <div class="curso">
       <h3>Master en Python, Django, Flask y Tkinter</h3>
-      <p>Udemy, 2021</p>
+      <p>Udemy, 2021.</p>
     </div>
 
     <div class="curso">
       <h3>Master en Php, SQL, POO, MVC y Laravel</h3>
-      <p>Udemy, 2021</p>
+      <p>Udemy, 2021.</p>
     </div>
   </div>
 </template>
@@ -28,15 +28,24 @@ export default {
 <style scoped>
 .seccion-educacion {
   padding: 20px;
-  background-color: #f0f0f0;
   border-radius: 10px;
 }
 h2 {
-  color: #333;
+    color: azure;
+}
+h3 {
+    color: azure;
 }
 .curso {
-  border-left: 3px solid #3498db;
+  font-size: 22px;
+  border-left: 3px solid azure;
   padding-left: 15px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .curso {
+  font-size: 13px;
+  }
 }
 </style>

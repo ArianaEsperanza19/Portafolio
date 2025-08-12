@@ -17,11 +17,11 @@
                 <Intereses v-if="contenidoActual === 'intereses'" />
 
             <div class="otros">
-                <div class="boton" @click="mostrarContenido('proyectos')"><span>Proyectos</span></div>
-                <div class="boton" @click="mostrarContenido('educacion')"><span>Educacion</span></div>
-                <div class="boton" @click="mostrarContenido('herramientas')"><span>Herramientas</span></div>
-                <div class="boton" @click="mostrarContenido('experiencia')"><span>Experiencia</span></div>
-                <div class="boton" @click="mostrarContenido('intereses')"><span>Intereses</span></div>
+                <div class="boton" @click="mostrarContenido('proyectos')"><span><img src="assets/home.png"></span></div>
+                <div class="boton" @click="mostrarContenido('educacion')"><span><img src="assets/education.png"></span></div>
+                <div class="boton" @click="mostrarContenido('herramientas')"><span><img src="assets/tools.png"></span></div>
+                <div class="boton" @click="mostrarContenido('experiencia')"><span><img src="assets/work.png"></span></div>
+                <div class="boton" @click="mostrarContenido('intereses')"><span><img src="assets/hobby.png"></span></div>
             </div>
             </div>
         </div>
@@ -61,17 +61,18 @@ export default {
 
 <style>
 /* Estilos globales */
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #f2ecf2;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f2ecf2;
 }
 
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	gap: 10px;
-	height: 95vh;
+	height: 85vh;
     margin: 10px;
 }
 
@@ -88,7 +89,6 @@ body {
 
 /* Clases para los hijos de .Personal */
 .cajita-foto {
-    background-color: #121e65;
     border-radius: 10px;
     flex-grow: 1; /* Permite que el contenedor de la foto se estire */
     display: flex;
@@ -109,6 +109,8 @@ body {
 /* Estilos de la imagen de perfil */
 .cajita-foto img {
     border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -155,6 +157,13 @@ body {
     transition: background-color 0.3s;
     margin: 0 auto;
 }
+
+img {
+    padding-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+
 .boton:hover {
     background-color: #82c0ff;
 }
@@ -166,7 +175,6 @@ body {
 
 /* Estilos para los proyectos */
 .item {
-    background-color: #121e65;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -178,5 +186,37 @@ body {
     width: 100%;
     height: 85%;
     object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+html body {
+    margin: 15px;
+    padding: 0;
+}
+
+.grid-container {
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: 95vh;
+}
+
+.boton {
+    height: 70px;
+    width: 70%;
+}
+
+.boton span {
+    padding: 5px;
+}
+
+.cuadricula {
+    gap: 5px;
+}
+
+.otros {
+    gap: 5px;
+}
 }
 </style>

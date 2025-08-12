@@ -30,7 +30,6 @@ export default {
 	gap: 15px;
 }
 .item-class {
-	background-color: #121e65;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -42,5 +41,12 @@ export default {
     border-radius: 10px;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+  .proyectos-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
 </style>
