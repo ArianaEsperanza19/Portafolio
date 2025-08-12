@@ -37,7 +37,7 @@ export default {
   border-radius: 10px;
 }
 h2 {
-  color: #333;
+  color: azure;
 }
 .trabajo {
   border-left: 3px solid #2ecc71;

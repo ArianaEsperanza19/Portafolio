@@ -99,9 +99,10 @@ html, body {
 }
 
 .cajita-info {
-    background-color: #007bf8;
+    border: 1px solid azure;
+    background-color : #007bf8;
     color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     flex-grow: 1; /* Permite que el contenedor de la info se estire */
 }

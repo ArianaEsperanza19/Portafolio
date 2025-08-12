@@ -9,3 +9,9 @@ export default {
   name: 'SeccionIntereses'
 }
 </script>
+
+<style scoped>
+h2 {
+  color: azure;
+}
+</style>
