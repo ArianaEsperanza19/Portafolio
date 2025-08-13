@@ -112,8 +112,8 @@ margin: 10px;
     border-radius: 50%;
     max-width: 100%;
     max-height: 100%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -223,5 +223,10 @@ html body {
     justify-content: start;
     border: none;
 }
+
+.cajita-foto {
+    width: 150px;
+    height: 150px;
+    }
 }
 </style>

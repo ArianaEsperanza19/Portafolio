@@ -34,7 +34,7 @@ export default {
   }
 
   a:hover {
-    color: black;
+    color: #70c6ff;
   }
 @media (max-width: 768px) {
   p {
