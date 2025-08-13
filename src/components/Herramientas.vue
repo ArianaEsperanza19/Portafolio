@@ -10,6 +10,13 @@
           <div>• JavaScript, HTML/CSS/Bootstrap.</div>
           <div>• Bash Shell, Rust.</div>
           <div>• Mysql/MariaDB.</div>
+          <span class="lenguajes">
+          <img src='assets/icons/django.png' alt="PHP"/>
+          <img src='assets/icons/laravel.png'/>
+          <img src='assets/icons/css.png'/>
+          <img src='assets/icons/vue.png'/>
+          <img src='assets/icons/mariadb.png'/>
+</span>
         </span>
       </div>
       <div class="item">
@@ -24,7 +31,7 @@
       </div>
       <div class="item">
         <span id="largo">
-        <div class="titulos">Otros</div>
+        <div class="titulos">Otros <span class="git"><img src='assets/icons/git.png'/></span></div>
           <div>• Git como control de versiones.</div>
           <div>• Uso de IA.</div>
           <div><strong style="color: azure;">Varios:</strong></div>
@@ -35,8 +42,12 @@
       <div class="item">
         <span id="largo">
         <div class="titulos">Sistemas Operativos</div>
-          <div>• GNU/Linux.</div>
-          <div>• Windows.</div>
+          <div>• GNU/Linux. </div>
+          <div>• Windows. </div>
+          <span class="sistemas">
+          <img src='assets/icons/linux.png'>
+          <img  id="windows"  src='assets/icons/win.png'>
+          </span>
         </span>
       </div>
     </div>
@@ -82,7 +93,57 @@ export default {
   margin-bottom: 10px;
 }
 
+.lenguajes {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.sistemas img {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+
+#windows {
+  height: 35px;
+  width: 55px;
+  position: relative;
+  top: -10px;
+}
+
+.git {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+}
+.git img {
+  width: 30px;
+  height: 30px;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+
 h2 {
     color: azure;
+}
+
+@media (max-width: 768px) {
+
+  .sistemas  {
+    display: flex;
+    width: 50px;
+    margin: 0px;
+  }
+  #windows {
+    height: 30px;
+    width: 45px;
+    position: relative;
+    top: 15px;
+  }
+
 }
 </style>
