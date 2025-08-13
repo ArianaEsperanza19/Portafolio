@@ -2,7 +2,7 @@
     <div class="grid-container">
         <div class="Personal">
             <div class="cajita-foto" id="foto">
-                <img src="assets/avatar.jpg" alt="Ariana Uribe" class="perfil-img">
+                <img src="assets/icons/avatar.jpg" alt="Ariana Uribe" class="perfil-img">
             </div>
             <div class="cajita-info" id="info">
                 <Info />
@@ -17,11 +17,11 @@
                 <Intereses v-if="contenidoActual === 'intereses'" />
 
             <div class="otros">
-                <div class="boton" @click="mostrarContenido('proyectos')"><span><img src="assets/home.png"></span></div>
-                <div class="boton" @click="mostrarContenido('educacion')"><span><img src="assets/education.png"></span></div>
-                <div class="boton" @click="mostrarContenido('herramientas')"><span><img src="assets/tools.png"></span></div>
-                <div class="boton" @click="mostrarContenido('experiencia')"><span><img src="assets/work.png"></span></div>
-                <div class="boton" @click="mostrarContenido('intereses')"><span><img src="assets/hobby.png"></span></div>
+                <div class="boton" @click="mostrarContenido('proyectos')"><span><img src="assets/icons/home.png"></span></div>
+                <div class="boton" @click="mostrarContenido('educacion')"><span><img src="assets/icons/education.png"></span></div>
+                <div class="boton" @click="mostrarContenido('herramientas')"><span><img src="assets/icons/tools.png"></span></div>
+                <div class="boton" @click="mostrarContenido('experiencia')"><span><img src="assets/icons/work.png"></span></div>
+                <div class="boton" @click="mostrarContenido('intereses')"><span><img src="assets/icons/hobby.png"></span></div>
             </div>
             </div>
         </div>

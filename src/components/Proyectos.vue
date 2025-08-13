@@ -1,16 +1,16 @@
 <template>
             <div class="proyectos-wrapper">
     <div class="item-class">
-      <img src="assets/usuarios.png" alt="">
+      <img src="assets/project/usuarios.png" alt="">
     </div>
     <div class="item-class">
-      <img src="assets/comentarios.png" alt="">
+      <img src="assets/project/comentarios.png" alt="">
     </div>
     <div class="item-class">
-      <img src="assets/Dashboard.png" alt="">
+      <img src="assets/project/Dashboard.png" alt="">
     </div>
     <div class="item-class">
-      <img src="assets/profile.png" alt="">
+      <img src="assets/project/profile.png" alt="">
     </div>
   </div>
 </template>
