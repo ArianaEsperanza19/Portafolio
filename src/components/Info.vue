@@ -1,11 +1,11 @@
 <template>
   <div class="seccion-info">
-    <h2>Perfil</h2>
-    <p>Soy una profesional en constante búsqueda de nuevas oportunidades y desafíos. Apasionada por mi trabajo y ávida de conocimiento, me encanta todo lo relacionado con la computación y la informática, por su capacidad de crear cosas útiles, prácticas y divertidas.</p>
+    <h2>Ing. Ariana Uribe</h2>
+    <p>Soy una <strong>desarrolladora web fullstack</strong> en constante búsqueda de nuevas oportunidades y desafíos. Apasionada por mi trabajo, me encanta todo lo relacionado con la computación y la informática, por su capacidad de crear cosas útiles, prácticas y divertidas. <strong>Tengo una fuerte inclinación por el backend y la lógica de programación</strong>.</p>
     <a href="/assets/download/Curriculum.pdf" download="Curriculum-Ariana.pdf">
       Descargar CV
 </a>
-  <span>Potafolio desarrollado con HTLM, CSS y Vue3</span>
+  <span>Potafolio desarrollado con HTLM, CSS y Vue3 | 2025</span>
   </div>
 </template>
 
@@ -17,7 +17,8 @@ export default {
 <style scoped>
 
   a {
-    margin-top: 20px;
+    text-decoration: none;
+    margin-top: 15px;
     margin-bottom: 0px;
     position: relative;
     display: flex;
@@ -26,7 +27,7 @@ export default {
   }
   span {
   position: relative;
-  top: 20px;
+  top: 15px;
   display: flex;
   justify-content: center;
   color: azure;
@@ -34,8 +35,13 @@ export default {
   }
 
   a:hover {
-    color: #70c6ff;
+    font-weight: bold;
+    color: aquamarine;
   }
+  p strong {
+      color: aquamarine;
+  }
+
 @media (max-width: 768px) {
   p {
     font-size: 13px;
@@ -47,9 +53,9 @@ export default {
     }
 
   span {
-    position: relative;
-    top: -5px;
-    }
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+  }
   h2 {
     color: azure;
     font-size: 17px;

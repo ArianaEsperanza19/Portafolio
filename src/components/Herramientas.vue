@@ -5,11 +5,11 @@
       <div  class="item">
         <span id="largo">
           <div class="titulos">Lenguajes</div>
-          <div>• PHP, Laravel y Vue.</div>
-          <div>• Python, Django y Flask.</div>
-          <div>• JavaScript, HTML/CSS/Bootstrap.</div>
-          <div>• Bash Shell, Rust.</div>
-          <div>• Mysql/MariaDB.</div>
+          <div><span class="punto">•</span> PHP, Laravel y Vue.</div>
+          <div><span class="punto">•</span> Python, Django y Flask.</div>
+          <div><span class="punto">•</span> JavaScript, HTML/CSS/Bootstrap.</div>
+          <div><span class="punto">•</span> Bash Shell, Rust.</div>
+          <div><span class="punto">•</span> Mysql/MariaDB.</div>
           <span class="lenguajes">
           <img src='assets/icons/django.png' alt="PHP"/>
           <img src='assets/icons/laravel.png'/>
@@ -32,18 +32,18 @@
       <div class="item">
         <span id="largo">
         <div class="titulos">Otros <span class="git"><img src='assets/icons/git.png'/></span></div>
-          <div>• Git como control de versiones.</div>
-          <div>• Uso de IA.</div>
-          <div><strong style="color: azure;">Varios:</strong></div>
-          <div>• Autodidacta.</div>
-          <div>• Tipeado 70 palabras por minuto.</div>
+          <div><span class="punto">•</span> Git como control de versiones.</div>
+          <div><span class="punto">•</span> Uso de IA.</div>
+          <div style="margin-top: 10px"><strong style="color: azure;">Varios:</strong></div>
+          <div><span class="punto">•</span> Autodidacta.</div>
+          <div><span class="punto">•</span> Tipeado 70 palabras por minuto.</div>
         </span>
       </div>
       <div class="item">
         <span id="largo">
         <div class="titulos">Sistemas Operativos</div>
-          <div>• GNU/Linux. </div>
-          <div>• Windows. </div>
+          <div><span class="punto">•</span> GNU/Linux. </div>
+          <div><span class="punto">•</span> Windows. </div>
           <span class="sistemas">
           <img src='assets/icons/linux.png'>
           <img  id="windows"  src='assets/icons/win.png'>
@@ -80,6 +80,11 @@ export default {
   justify-content: center;
 }
 
+.item:hover {
+  border: 2px solid #0657b3;
+
+}
+
 #largo {
   display: flex;
   flex-direction: column;
@@ -91,6 +96,10 @@ export default {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.punto {
+  color: azure;
 }
 
 .lenguajes {

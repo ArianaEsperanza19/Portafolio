@@ -1,9 +1,15 @@
 <template>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
     <div class="grid-container">
         <div class="Personal">
+        <img id="trebol" src="assets/icons/trebol.png">
             <div class="cajita-foto" id="foto">
                 <img src="assets/icons/avatar.jpg" alt="Ariana Uribe" class="perfil-img">
             </div>
+            <div id="cajita-linkedin"><a href="https://www.linkedin.com/in/ariana-uribe-b41938121/"><img src="assets/icons/linkedin.png"></a></div>
             <div class="cajita-info" id="info">
                 <Info />
             </div>
@@ -64,7 +70,7 @@ export default {
 html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+font-family: 'Playfair Display', serif;
   background-color: #f2ecf2;
 }
 
@@ -122,7 +128,7 @@ margin: 10px;
 	display: grid;
 	grid-template-columns: 4fr 1fr;
 	grid-template-rows: 100% 1fr;
-	background-color: #70c6ff;
+	background-color: #3aa4fe;
 	border-radius: 10px;
 	gap: 20px;
 	padding: 20px;
@@ -190,6 +196,25 @@ img {
     object-fit: cover;
 }
 
+#trebol {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    width: 70px;
+    height: 70px;
+}
+
+#cajita-linkedin {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+#cajita-linkedin img {
+
+    width: 75px;
+    height: 75px;
+}
 
 @media (max-width: 768px) {
 html body {
@@ -227,6 +252,17 @@ html body {
 .cajita-foto {
     width: 150px;
     height: 150px;
+}
+}
+@media (max-width: 768px) {
+    #trebol {
+        top: 4%;
+        left: 30%;
     }
+    #cajita-linkedin {
+        top: 20%;
+        left: 59%;
+    }
+
 }
 </style>

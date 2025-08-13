@@ -38,7 +38,7 @@ h3 {
 }
 .curso {
   font-size: 22px;
-  border-left: 3px solid azure;
+  border-left: 4px solid #7fffd4;
   padding-left: 15px;
   margin-bottom: 20px;
 }

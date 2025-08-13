@@ -11,6 +11,12 @@ export default {
 </script>
 
 <style scoped>
+
+.seccion-intereses {
+  padding: 20px;
+  border-radius: 10px;
+}
+
 h2 {
   color: azure;
 }
