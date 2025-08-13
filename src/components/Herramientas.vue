@@ -5,7 +5,7 @@
       <div  class="item">
         <span id="largo">
           <div class="titulos">Lenguajes</div>
-          <div>• PHP, Laravel.</div>
+          <div>• PHP, Laravel y Vue.</div>
           <div>• Python, Django y Flask.</div>
           <div>• JavaScript, HTML/CSS/Bootstrap.</div>
           <div>• Bash Shell, Rust.</div>
@@ -27,9 +27,9 @@
         <div class="titulos">Otros</div>
           <div>• Git como control de versiones.</div>
           <div>• Uso de IA.</div>
-          <div><strong>Varios:</strong></div>
+          <div><strong style="color: azure;">Varios:</strong></div>
           <div>• Autodidacta.</div>
-          <div>• Tipeado 70 pal/min.</div>
+          <div>• Tipeado 70 palabras por minuto.</div>
         </span>
       </div>
       <div class="item">

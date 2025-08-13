@@ -73,7 +73,7 @@ html, body {
 	grid-template-columns: 1fr 3fr;
 	gap: 10px;
 	height: 85vh;
-    margin: 10px;
+margin: 10px;
 }
 
 .Personal {
@@ -136,6 +136,8 @@ html, body {
 }
 
 .otros {
+    border: 1px solid azure;
+    margin-top: 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -146,7 +148,6 @@ html, body {
 
 .boton {
     color: #f2ecf2;
-    background-color: #007bf8;
     border-radius: 10px;
     width: 90%;
     height: 90px;
@@ -166,7 +167,7 @@ img {
 }
 
 .boton:hover {
-    background-color: #82c0ff;
+    background-color: #007bf8;
 }
 
 .boton span {
@@ -217,7 +218,10 @@ html body {
 }
 
 .otros {
-    gap: 5px;
+    margin-top: 0px;
+    gap: 10px;
+    justify-content: start;
+    border: none;
 }
 }
 </style>
