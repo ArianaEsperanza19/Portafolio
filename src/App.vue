@@ -9,7 +9,7 @@
             <div class="cajita-foto" id="foto">
                 <img src="assets/icons/avatar.jpg" alt="Ariana Uribe" class="perfil-img">
             </div>
-            <div id="cajita-linkedin"><a href="https://www.linkedin.com/in/ariana-uribe-b41938121/"><img src="assets/icons/linkedin.png"></a></div>
+            <div id="cajita-linkedin"><a href="https://www.linkedin.com/in/ariana-uribe-b41938121/"><img src="assets/icons/linkedin.png" alt="Linkedin"></a></div>
             <div class="cajita-info" id="info">
                 <Info />
             </div>
@@ -263,6 +263,22 @@ html body {
         top: 20%;
         left: 59%;
     }
+}
 
+/* Media queries para dispositivos móviles */
+@media (max-width: 480px) {
+    #trebol {
+        top: 3%;
+        left: 22%;
+    }
+    #cajita-linkedin {
+        top:24%;
+        left: 60%;
+    }
+    .boton {
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 </style>

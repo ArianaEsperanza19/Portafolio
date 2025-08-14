@@ -31,7 +31,7 @@
       </div>
       <div class="item">
         <span id="largo">
-        <div class="titulos">Otros <span class="git"><img src='assets/icons/git.png'/></span></div>
+        <div class="titulos">Otros <span id="git"><img src='assets/icons/git.png'/></span></div>
           <div><span class="punto">•</span> Git como control de versiones.</div>
           <div><span class="punto">•</span> Uso de IA.</div>
           <div style="margin-top: 10px"><strong style="color: azure;">Varios:</strong></div>
@@ -127,7 +127,7 @@ export default {
   position: relative;
   top: 5px;
 }
-.git img {
+#git img {
   width: 30px;
   height: 30px;
 }
@@ -142,6 +142,9 @@ h2 {
 
 @media (max-width: 768px) {
 
+  .contenedor-grid {
+    grid-template-columns: 1fr;
+  }
   .sistemas  {
     display: flex;
     width: 50px;
@@ -153,6 +156,39 @@ h2 {
     position: relative;
     top: 15px;
   }
+}
 
+/* Media queries para dispositivos móviles */
+@media (max-width: 480px) {
+  .contenedor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    padding: 10px;
+  }
+  .item div {
+    font-size: 10px;
+  }
+  .titulos {
+  }
+  .sistemas img {
+    width: 45px;
+    height: 45px;
+  }
+  #windows {
+    height: 30px;
+    width: 45px;
+    position: relative;
+    top: 8px;
+  }
+  .lenguajes img {
+    width: 30px;
+    height: 30px;
+  }
+  #git img {
+    width: 20px;
+    height: 20px;
+  }
 }
 </style>
