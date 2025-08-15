@@ -15,7 +15,9 @@ export default {
 }
 </script>
 <style scoped>
-
+  p {
+    font-size: 14px;
+  }
   a {
     text-decoration: none;
     margin-top: 15px;

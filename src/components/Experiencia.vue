@@ -3,7 +3,7 @@
     <h2>Experiencia Laboral</h2>
 
     <div class="trabajo">
-      <h3>Operaria de Software</h3>
+      <h3>Operadora de Software</h3>
       <p>Megagroups S.A, 2021-2022</p>
         Responsable de mantener y operar el software de almacenamiento y análisis de datos de clientes utilizado por la empresa.
       <span><strong>Stack:</strong> HTML, CSS, JS, PHP. Mysql, Git.</span>

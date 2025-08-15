@@ -78,7 +78,7 @@ font-family: 'Playfair Display', serif;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	gap: 10px;
-	height: 85vh;
+	height: 80vh;
 margin: 10px;
 }
 

@@ -35,6 +35,7 @@
           <div><span class="punto">•</span> Git como control de versiones.</div>
           <div><span class="punto">•</span> Uso de IA.</div>
           <div style="margin-top: 10px"><strong style="color: azure;">Varios:</strong></div>
+          <div><span class="punto">•</span> Obsidian para toma de notas.</div>
           <div><span class="punto">•</span> Autodidacta.</div>
           <div><span class="punto">•</span> Tipeado 70 palabras por minuto.</div>
         </span>
