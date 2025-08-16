@@ -2,12 +2,12 @@
   <div class="seccion-intereses">
     <div class="contenedor-flex">
       <div class="botones-secciones">
-        <div><strong>Intereses</strong></div>
-        <div @click="cambiarSeccion('Tecnologia')">Tecnologia</div>
-        <div @click="cambiarSeccion('Creativos')">Creativos</div>
-        <div @click="cambiarSeccion('Estrategia')">Estrategia</div>
-        <div @click="cambiarSeccion('Personales')">Personales</div>
-        <div @click="cambiarSeccion('Desarrollo')">Desarrollo</div>
+        <div style="color: aquamarine;"><strong>Intereses</strong></div>
+        <div  :class="{ 'boton-activo': seccionActual === 'Tecnologia' }" @click="cambiarSeccion('Tecnologia')">Tecnologia</div>
+        <div :class="{ 'boton-activo': seccionActual === 'Creativos' }" @click="cambiarSeccion('Creativos')">Creativos</div>
+        <div :class="{ 'boton-activo': seccionActual === 'Estrategia' }" @click="cambiarSeccion('Estrategia')">Estrategia</div>
+        <div :class="{ 'boton-activo': seccionActual === 'Personales' }" @click="cambiarSeccion('Personales')">Personales</div>
+        <div :class="{ 'boton-activo': seccionActual === 'Desarrollo' }" @click="cambiarSeccion('Desarrollo')">Desarrollo</div>
       </div>
 
       <div class="contenido-dinamico">
@@ -69,16 +69,49 @@ export default {
   width: 100%;
 }
 
+.boton-activo {
+  background-color: #007bf8;
+  padding: 2px;
+}
 .botones-secciones {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  color: azure;
 }
 
 .contenido-dinamico {
   margin: 10px;
   display: flex;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .botones-secciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+  }
+  .botones-secciones div {
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .botones-secciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+  }
+  .botones-secciones div {
+    padding: 5px;
+    text-align: center;
+  }
 }
 </style>
