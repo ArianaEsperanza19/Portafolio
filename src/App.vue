@@ -143,7 +143,6 @@ margin: 10px;
 
 .otros {
     border: 1px solid azure;
-    margin-top: 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;

@@ -1,19 +1,30 @@
 <template>
   <div class="seccion-intereses">
-    <h2>Intereses</h2>
-    <div class="contenedor-grid">
-      <div class="izquierda">
-        <div>Tecnologia</div>
-        <div>Creativos</div>
-        <div id="fila">Estrategia</div>
+    <div class="contenedor-flex">
+      <div class="botones-secciones">
+        <div><strong>Intereses</strong></div>
+        <div @click="cambiarSeccion('Tecnologia')">Tecnologia</div>
+        <div @click="cambiarSeccion('Creativos')">Creativos</div>
+        <div @click="cambiarSeccion('Estrategia')">Estrategia</div>
+        <div @click="cambiarSeccion('Personales')">Personales</div>
+        <div @click="cambiarSeccion('Desarrollo')">Desarrollo</div>
       </div>
 
-      <div class="derecha">
-        <div class="item-right">
-          Personales
+      <div class="contenido-dinamico">
+        <div v-if="seccionActual === 'Tecnologia'">
+          <Tecnologia />
         </div>
-        <div class="item-right">
-          Desarrollo
+        <div v-if="seccionActual === 'Creativos'">
+          <Creativos />
+        </div>
+        <div v-if="seccionActual === 'Estrategia'">
+          <Estrategia />
+        </div>
+        <div v-if="seccionActual === 'Personales'">
+          <Personales />
+        </div>
+        <div v-if="seccionActual === 'Desarrollo'">
+          <Desarrollo />
         </div>
       </div>
     </div>
@@ -21,59 +32,53 @@
 </template>
 
 <script>
+import Tecnologia from './hobbies/Tecno.vue';
+import Creativos from './hobbies/Creativos.vue';
+import Estrategia from './hobbies/Estrategia.vue';
+import Personales from './hobbies/Personales.vue';
+import Desarrollo from './hobbies/Desarrollo.vue';
+
 export default {
-  name: 'SeccionIntereses'
+  name: 'SeccionIntereses',
+  components: {
+    Creativos,
+    Estrategia,
+    Tecnologia,
+    Personales,
+    Desarrollo
+  },
+  data() {
+    return {
+      seccionActual: 'Tecnologia' // Valor por defecto
+    }
+  },
+  methods: {
+    cambiarSeccion(seccion) {
+      this.seccionActual = seccion;
+    }
+  }
 }
 </script>
 
 <style scoped>
-
-.seccion-intereses {
-  padding: 20px;
-  border-radius: 10px;
-  height: 90vh;
-}
-
-h2 {
-  color: azure;
-}
-
-.contenedor-grid {
-  display:grid;
-  grid-template-columns: 70% 1fr;
-  grid-template-rows: auto;
+/* Los estilos se mantienen igual */
+.contenedor-flex {
+  display: inline-block;
   gap: 10px;
   height: 85vh;
-  background-color: red;
+  width: 100%;
 }
 
-.derecha {
-  background-color: green;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
-  gap: 10px;
+.botones-secciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
 
-.item-right {
-background-color: #0657b3;
-}
-
-.izquierda {
-  background-color: blue;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.izquierda div {
-  background-color: #0657b3;
-}
-
-#fila {
-  grid-column: 1 / 2 span;
-}
-.izquierda, .derecha {
-  margin: 0;
+.contenido-dinamico {
+  margin: 10px;
+  display: flex;
+  height: 100%;
 }
 </style>

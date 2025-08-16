@@ -1,11 +1,10 @@
 <template>
-  <h1>Tecnología</h1>
-  Cosas
+  <h1>Desarrollo</h1>
 </template>
 
 <script>
 export default {
-  name: 'SeccionTecno'
+  name: 'SeccionDesarrollo'
 }
 </script>
 
