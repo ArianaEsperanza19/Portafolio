@@ -1,5 +1,5 @@
 <template>
-            <div class="proyectos-wrapper">
+  <div class="proyectos-wrapper">
     <div class="item-class">
       <img src="assets/project/usuarios.png" alt="">
     </div>

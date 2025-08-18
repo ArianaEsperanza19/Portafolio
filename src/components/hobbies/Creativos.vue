@@ -33,9 +33,8 @@ export default {
   padding: 10px;
 }
 
-h3 {
+h3, h2{
   font-size: 1.5em;
-  margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 

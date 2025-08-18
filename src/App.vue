@@ -5,11 +5,13 @@
 </head>
     <div class="grid-container">
         <div class="Personal">
+        <div id="referencia_trebol">
         <img id="trebol" src="assets/icons/trebol.png">
-            <div class="cajita-foto" id="foto">
-                <img src="assets/icons/avatar.jpg" alt="Ariana Uribe" class="perfil-img">
+        </div>
+            <div class="cajita-foto">
+                <img id="foto " src="assets/icons/avatar.jpg" alt="Ariana Uribe" class="perfil-img">
             </div>
-            <div id="cajita-linkedin"><a href="https://www.linkedin.com/in/ariana-uribe-b41938121/"><img src="assets/icons/linkedin.png" alt="Linkedin"></a></div>
+            <div id="cajita-linkedin"><a href="https://www.linkedin.com/in/ariana-uribe-b41938121/"><img id="linkedin" src="assets/icons/linkedin.png" alt="Linkedin"></a></div>
             <div class="cajita-info" id="info">
                 <Info />
             </div>
@@ -68,9 +70,8 @@ export default {
 <style>
 /* Estilos globales */
 html, body {
-  margin: 0;
-  padding: 0;
-font-family: 'Playfair Display', serif;
+  margin: 0; padding: 0;
+    font-family: 'Playfair Display', serif;
   background-color: #f2ecf2;
 }
 
@@ -79,7 +80,7 @@ font-family: 'Playfair Display', serif;
 	grid-template-columns: 1fr 3fr;
 	gap: 10px;
 	height: 80vh;
-margin: 10px;
+    margin: 10px;
 }
 
 .Personal {
@@ -93,11 +94,24 @@ margin: 10px;
 	padding: 15px;
 }
 
+#referencia_trebol {
+    position: relative;
+    right: 160px;
+    margin: 0;
+    padding: 0;
+}
+#cajita-linkedin {
+    position: relative;
+    left: 80px;
+    bottom: 60px;
+    margin: 0;
+    padding: 0;
+}
 /* Clases para los hijos de .Personal */
 .cajita-foto {
     border-radius: 10px;
     flex-grow: 1; /* Permite que el contenedor de la foto se estire */
-    display: flex;
+    display: absolute;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -115,6 +129,7 @@ margin: 10px;
 
 /* Estilos de la imagen de perfil */
 .cajita-foto img {
+    position: relative;
     border-radius: 50%;
     max-width: 100%;
     max-height: 100%;
@@ -131,7 +146,7 @@ margin: 10px;
 	background-color: #3aa4fe;
 	border-radius: 10px;
 	gap: 20px;
-	padding: 20px;
+	padding: 10px;
 }
 
 .proyectos-wrapper {
@@ -197,23 +212,17 @@ img {
 
 #trebol {
     position: absolute;
-    top: 3%;
-    left: 1%;
     width: 70px;
     height: 70px;
 }
 
-#cajita-linkedin {
+#linkedin {
     position: absolute;
-    top: 25%;
-    left: 20%;
-}
-
-#cajita-linkedin img {
-
     width: 75px;
     height: 75px;
 }
+
+
 
 @media (max-width: 768px) {
 html body {
@@ -259,8 +268,8 @@ html body {
         left: 30%;
     }
     #cajita-linkedin {
-        top: 20%;
-        left: 59%;
+        top: -13%;
+        left: 15%;
     }
 }
 
@@ -271,8 +280,8 @@ html body {
         left: 22%;
     }
     #cajita-linkedin {
-        top:24%;
-        left: 60%;
+        top: -11%;
+        left: 20%;
     }
     .boton {
         padding: 10px;

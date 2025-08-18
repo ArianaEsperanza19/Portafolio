@@ -38,7 +38,6 @@ export default {
 
 h2, h3 {
   font-size: 1.5em;
-  margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 

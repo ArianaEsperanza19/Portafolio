@@ -39,6 +39,9 @@ export default {
 .punto{
   color: aquamarine;
 }
+.intereses-tecnologia {
+  padding: 10px;
+}
   h3, h2, p, ul{
     color: azure;
   }
