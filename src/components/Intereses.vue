@@ -2,7 +2,7 @@
   <div class="seccion-intereses">
     <div class="contenedor-flex">
       <div class="botones-secciones">
-        <div style="color: aquamarine;"><strong>Intereses</strong></div>
+        <div style="color: aquamarine; cursor: default"><strong>Intereses</strong></div>
         <div  :class="{ 'boton-activo': seccionActual === 'Tecnologia' }" @click="cambiarSeccion('Tecnologia')">Tecnologia</div>
         <div :class="{ 'boton-activo': seccionActual === 'Creativos' }" @click="cambiarSeccion('Creativos')">Creativos</div>
         <div :class="{ 'boton-activo': seccionActual === 'Estrategia' }" @click="cambiarSeccion('Estrategia')">Estrategia</div>
@@ -65,7 +65,6 @@ export default {
 .contenedor-flex {
   display: inline-block;
   gap: 10px;
-  height: 85vh;
   width: 100%;
 }
 
@@ -79,6 +78,7 @@ export default {
   align-items: center;
   gap: 20px;
   color: azure;
+  cursor: pointer;
 }
 
 .contenido-dinamico {

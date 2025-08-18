@@ -31,13 +31,18 @@
       </div>
       <div class="item">
         <span id="largo">
-        <div class="titulos">Otros <span id="git"><img src='assets/icons/git.png'/></span></div>
+        <div class="titulos">Otros <span id="git-obsidian"><img src='assets/icons/git.png'/>
+
+            <img src='assets/icons/obsidian.png'/>
+          </span></div>
           <div><span class="punto">•</span> Git como control de versiones.</div>
           <div><span class="punto">•</span> Uso de IA.</div>
           <div style="margin-top: 10px"><strong style="color: azure;">Varios:</strong></div>
           <div><span class="punto">•</span> Obsidian para toma de notas.</div>
           <div><span class="punto">•</span> Autodidacta.</div>
           <div><span class="punto">•</span> Tipeado 70 palabras por minuto.</div>
+          <span id="gitObsidian">
+          </span>
         </span>
       </div>
       <div class="item">
@@ -81,11 +86,6 @@ export default {
   justify-content: center;
 }
 
-.item:hover {
-  border: 2px solid #0657b3;
-
-}
-
 #largo {
   display: flex;
   flex-direction: column;
@@ -123,12 +123,12 @@ export default {
   top: -10px;
 }
 
-.git {
+.git-obsidian {
   display: inline-block;
   position: relative;
   top: 5px;
 }
-#git img {
+#git-obsidian img {
   width: 30px;
   height: 30px;
 }
@@ -187,7 +187,7 @@ h2 {
     width: 30px;
     height: 30px;
   }
-  #git img {
+  #git-obsidian img {
     width: 20px;
     height: 20px;
   }

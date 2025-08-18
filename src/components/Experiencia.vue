@@ -25,7 +25,7 @@ desarrollar un software programado en php, para gestionar los datos de los asegu
 datos SQL.
       <span><strong>Stack:</strong> HTML, CSS, JS, PHP. Mysql, Git.</span>
     </div>
-<hr style="color:#0c84ff; ">
+<hr style="color:#0c84ff; margin: 0px ">
   </div>
 </template>
 
