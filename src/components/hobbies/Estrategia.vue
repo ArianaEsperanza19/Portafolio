@@ -16,10 +16,10 @@
     </ul>
 
     <div class="galeria-juegos">
-      <img src="assets/galery/PZ.png" alt="Imagen del juego Project Zomboid">
-      <img src="assets/galery/ageland.webp" alt="Imagen del juego Age of Empires III">
-      <img src="assets/galery/Totalwar.webp" alt="Imagen del juego Saga Total War">
-      <img src="assets/galery/vintage.webp" alt="Imagen del juego Vintage Story">
+      <img src="assets/gallery/PZ.png" alt="Imagen del juego Project Zomboid">
+      <img src="assets/gallery/ageland.webp" alt="Imagen del juego Age of Empires III">
+      <img src="assets/gallery/Totalwar.webp" alt="Imagen del juego Saga Total War">
+      <img src="assets/gallery/vintage.webp" alt="Imagen del juego Vintage Story">
     </div>
   </div>
 </template>

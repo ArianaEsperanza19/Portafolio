@@ -13,10 +13,10 @@
     </ul>
 
     <div class="galeria-creativos">
-      <img src="assets/galery/LogoKorvo 2021.jpg" alt="Ejemplo de dibujo o foto 2">
-      <img src="assets/galery/Aragnestexr.jpg" alt="Ejemplo de dibujo o foto 3">
-      <img src="assets/galery/LogoSVCN 2021.jpg" alt="Ejemplo de dibujo o foto 4">
-      <img id="dnd" src="assets/galery/PJ D&D Louise 2020.jpg" alt="Ejemplo de dibujo o foto 5">
+      <img src="assets/gallery/LogoKorvo 2021.jpg" alt="Ejemplo de dibujo o foto 2">
+      <img src="assets/gallery/Aragnestexr.jpg" alt="Ejemplo de dibujo o foto 3">
+      <img src="assets/gallery/LogoSVCN 2021.jpg" alt="Ejemplo de dibujo o foto 4">
+      <img id="dnd" src="assets/gallery/PJ D&D Louise 2020.jpg" alt="Ejemplo de dibujo o foto 5">
     </div>
   </div>
 </template>
