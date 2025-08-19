@@ -288,5 +288,9 @@ html body {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+    .boton span img {
+        width: 40px;
+        height: 40px;
+    }
 }
 </style>

@@ -161,7 +161,7 @@ h2 {
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 480px) {
-  .contenedor-grid {
+  .seccion-herramientas {
     grid-template-columns: 1fr;
   }
 
