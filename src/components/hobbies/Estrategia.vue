@@ -20,8 +20,9 @@
       <img src="assets/gallery/ageland.webp" alt="Imagen del juego Age of Empires III">
       <img src="assets/gallery/Totalwar.webp" alt="Imagen del juego Saga Total War">
       <img src="assets/gallery/vintage.webp" alt="Imagen del juego Vintage Story">
-    </div>
   </div>
+</div>
+
 </template>
 
 <script>
@@ -34,11 +35,6 @@ export default {
 .seccion-estrategia {
   color: azure;
   padding: 10px;
-}
-
-h2, h3 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
 }
 
 p {
@@ -73,6 +69,11 @@ li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.modal-80w {
+  max-width: 95vw;
+  max-height: 95vh;
+  margin: 1.75rem auto; /* Centra el modal en la pantalla */
+}
 /* Para pantallas pequeñas, las imágenes se apilan verticalmente */
 @media (max-width: 768px) {
   .galeria-juegos img {

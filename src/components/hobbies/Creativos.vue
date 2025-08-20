@@ -34,8 +34,6 @@ export default {
 }
 
 h3, h2{
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
 }
 
 ul {
